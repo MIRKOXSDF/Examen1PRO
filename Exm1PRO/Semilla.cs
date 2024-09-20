@@ -16,6 +16,8 @@ namespace Exm1PRO
             this.tiempoDeCrecimiento = tiempoDeCrecimiento;
         }
         public abstract void Plantar(bool plantastes);
+
+        public abstract void RecolectarFruta();
         
         
 
