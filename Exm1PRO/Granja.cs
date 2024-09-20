@@ -16,16 +16,22 @@ namespace Exm1PRO
         {
             Console.WriteLine("Coloca el nombre del granjero : ");
             string nombre = Console.ReadLine();
-            try
+            bool active = true;
+            while(active)
             {
-                Console.WriteLine("Coloca la cantidad de dinero : ");
-                dinero = float.Parse(Console.ReadLine());
+                try
+                {
+                    Console.WriteLine("Coloca la cantidad de dinero : ");
+                    dinero = float.Parse(Console.ReadLine());
+                    active = false;
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Entrada no válida. Por favor, ingresa un número entero.");
+
+                }
             }
-            catch(FormatException)
-            {
-                Console.WriteLine("Entrada no válida. Por favor, ingresa un número entero.");
-               
-            }
+       
 
 
 
