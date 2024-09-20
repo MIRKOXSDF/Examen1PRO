@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Exm1PRO
 {
-    class Animals
+    class Animals : IAnimal
     {
         public string nombre;
         public int cantidadDeLeche;
@@ -16,9 +16,10 @@ namespace Exm1PRO
             this.nombre = name;
             this.cantidadDeLeche = cantidadDeLeche;
         }
+
         public void Ordeñar()
         {
-            if(cantidadDeLeche > 0)
+            if (cantidadDeLeche > 0)
             {
                 Console.WriteLine($"Ordeñaste a {nombre} y obtuviste {cantidadDeLeche} litros de leche.");
 
