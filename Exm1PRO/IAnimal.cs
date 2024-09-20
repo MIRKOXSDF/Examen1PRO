@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Exm1PRO
 {
-    class Program
+    interface IAnimal
     {
-        static void Main(string[] args)
-        {
-
-        }
+        void Ordeñar();
     }
 }
