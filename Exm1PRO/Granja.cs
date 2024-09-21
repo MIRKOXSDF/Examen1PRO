@@ -12,7 +12,7 @@ namespace Exm1PRO
         Granjero granjero;
         float dinero;
 
-        public void Game()
+        public void AgregarNombre()
         {
             Console.WriteLine("Coloca el nombre del granjero : ");
             string nombre = Console.ReadLine();
@@ -23,20 +23,31 @@ namespace Exm1PRO
                 {
                     Console.WriteLine("Coloca la cantidad de dinero : ");
                     dinero = float.Parse(Console.ReadLine());
+                    if (dinero < 0)
+                    {
+                        Console.WriteLine("El dinero no puede ser un número negativo.");
+                        continue;
+
+                    }
                     active = false;
+
+
                 }
                 catch (FormatException)
                 {
                     Console.WriteLine("Entrada no válida. Por favor, ingresa un número entero.");
 
                 }
+               
+
+
             }
        
 
 
 
             granjero = new Granjero(nombre, dinero);
-            Console.WriteLine($"El granjero se llama {nombre} y tiene  {dinero} de dinero");
+            Console.WriteLine($"El granjero se llama {nombre} y tiene  ${dinero} de dinero");
 
 
         }
