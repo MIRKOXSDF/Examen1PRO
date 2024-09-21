@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Exm1PRO
 {
-    class SemillaPlatano : Semilla
+    class Arbol : Semilla
     {
         public string tipoDeFruta;
         public int frutasDisponibles;
-        public SemillaPlatano(string nombre, int tiempoDeCrecimiento) : base(nombre, tiempoDeCrecimiento)
+        public Arbol(string nombre, int tiempoDeCrecimiento) : base(nombre, tiempoDeCrecimiento)
         {
         }
 

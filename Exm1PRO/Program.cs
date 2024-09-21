@@ -11,7 +11,7 @@ namespace Exm1PRO
         static void Main(string[] args)
         {
             Granja granja = new Granja();
-            granja.AgregarNombre();
+            granja.Game();
             Console.ReadLine();
         }
     }
